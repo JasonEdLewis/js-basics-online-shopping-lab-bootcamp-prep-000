@@ -46,7 +46,7 @@ function removeFromCart(item) {
   // write your code here
   for(var i = 0; i < cart.length; i++){
     if(cart[i].itemName === item){
-      cart.slice(i,i+1);
+      cart.splice(i,1);
     }else{
       return 'That item is not in your cart.'
     }
