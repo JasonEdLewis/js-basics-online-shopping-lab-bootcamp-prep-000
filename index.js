@@ -27,10 +27,10 @@ function viewCart() {
   for (var i = 0; i < cart.length -1 ; i++){
     things.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
   }
-    return things.join(", ");
+    things = things.join(", ");
   }
   
-  // return `In your cart, you have ${things}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}. `;
+  return `In your cart, you have ${things}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}. `;
 }
 
 function total() {
