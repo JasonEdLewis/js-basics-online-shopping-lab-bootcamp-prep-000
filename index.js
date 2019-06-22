@@ -30,7 +30,7 @@ function viewCart() {
     things = things.join(", ");
   }
   
-  return `In your cart, you have ${things}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}. `;
+  return `In your cart, you have ${things}, and ${cart[cart.length - 1].itemName} at $${cart[cart.length - 1].itemPrice}.`;
 }
 
 function total() {
